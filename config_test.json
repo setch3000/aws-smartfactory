@@ -1,0 +1,34 @@
+{
+    "sensors": [ 
+        {
+            "name" : "rVibration_Temp",
+            "maxValue" : 100,
+            "minValue" : 0,
+            "iniitalValue" : 50,
+            "checkPoint" : [
+                {
+                    "timestamp": "00:00:00.000000",
+                    "value": 30
+                }, 
+                {
+                    "timestamp": "01:00:00.000000",
+                    "value": 35
+                },
+                {
+                    "timestamp": "02:00:00.000000",
+                    "value": 40
+                },
+                {
+                    "timestamp": "03:00:00.000000",
+                    "value": 45
+                },
+                {
+                    "timestamp": "04:00:00.000000",
+                    "value": 50
+                }
+            ]
+
+        }
+    ]
+
+}

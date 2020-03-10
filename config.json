@@ -1,0 +1,645 @@
+{
+
+    "label": {
+        "name": "wCylinderStatus",
+        "weight": {
+            "rVibration_Temp": 0.9,
+            "rVibration_Z_RMS_Velocity": 0.4,
+            "rVibration_X_RMS_Velocity": 0.44,
+            "wRMSCurrent": 0.5,
+            "wCurrentLoad": 0.55,
+            "wEncoderVelocity": 0.1
+        },
+        "bias": 50,
+        "threshold": 250,
+        "normalValue": 0,
+        "abnormalValue": 1
+    },
+
+    "sensors": [
+        {
+            "name": "rVibration_Temp",
+            "upperThreshold": 100,
+            "lowerThreshold": 0,
+            "iniitalValue": 50,
+            "checkPoint": [
+                {
+                    "timestamp": "00:00:00.000000",
+                    "value": 30
+                },
+                {
+                    "timestamp": "01:00:00.000000",
+                    "value": 35
+                },
+                {
+                    "timestamp": "02:00:00.000000",
+                    "value": 40
+                },
+                {
+                    "timestamp": "03:00:00.000000",
+                    "value": 45
+                },
+                {
+                    "timestamp": "04:00:00.000000",
+                    "value": 50
+                },
+                {
+                    "timestamp": "05:00:00.000000",
+                    "value": 55
+                },
+                {
+                    "timestamp": "06:00:00.000000",
+                    "value": 60
+                },
+                {
+                    "timestamp": "07:00:00.000000",
+                    "value": 65
+                },
+                {
+                    "timestamp": "08:00:00.000000",
+                    "value": 70
+                },
+                {
+                    "timestamp": "09:00:00.000000",
+                    "value": 75
+                },
+                {
+                    "timestamp": "10:00:00.000000",
+                    "value": 80
+                },
+                {
+                    "timestamp": "11:00:00.000000",
+                    "value": 85
+                },
+                {
+                    "timestamp": "12:00:00.000000",
+                    "value": 90
+                },
+                {
+                    "timestamp": "13:00:00.000000",
+                    "value": 85
+                },
+                {
+                    "timestamp": "14:00:00.000000",
+                    "value": 80
+                },
+                {
+                    "timestamp": "15:00:00.000000",
+                    "value": 75
+                },
+                {
+                    "timestamp": "16:00:00.000000",
+                    "value": 70
+                },
+                {
+                    "timestamp": "17:00:00.000000",
+                    "value": 65
+                },
+                {
+                    "timestamp": "18:00:00.000000",
+                    "value": 60
+                },
+                {
+                    "timestamp": "19:00:00.000000",
+                    "value": 55
+                },
+                {
+                    "timestamp": "20:00:00.000000",
+                    "value": 50
+                },
+                {
+                    "timestamp": "21:00:00.000000",
+                    "value": 45
+                },
+                {
+                    "timestamp": "22:00:00.000000",
+                    "value": 40
+                },
+                {
+                    "timestamp": "23:00:00.000000",
+                    "value": 35
+                }
+            ]
+        },
+        {
+            "name": "rVibration_Z_RMS_Velocity",
+            "upperThreshold": 140,
+            "lowerThreshold": 0,
+            "iniitalValue": 10,
+            "checkPoint": [
+                {
+                    "timestamp": "00:00:00.000000",
+                    "value": 10
+                },
+                {
+                    "timestamp": "01:00:00.000000",
+                    "value": 20
+                },
+                {
+                    "timestamp": "02:00:00.000000",
+                    "value": 30
+                },
+                {
+                    "timestamp": "03:00:00.000000",
+                    "value": 40
+                },
+                {
+                    "timestamp": "04:00:00.000000",
+                    "value": 50
+                },
+                {
+                    "timestamp": "05:00:00.000000",
+                    "value": 60
+                },
+                {
+                    "timestamp": "06:00:00.000000",
+                    "value": 70
+                },
+                {
+                    "timestamp": "07:00:00.000000",
+                    "value": 80
+                },
+                {
+                    "timestamp": "08:00:00.000000",
+                    "value": 90
+                },
+                {
+                    "timestamp": "09:00:00.000000",
+                    "value": 100
+                },
+                {
+                    "timestamp": "10:00:00.000000",
+                    "value": 110
+                },
+                {
+                    "timestamp": "11:00:00.000000",
+                    "value": 120
+                },
+                {
+                    "timestamp": "12:00:00.000000",
+                    "value": 130
+                },
+                {
+                    "timestamp": "13:00:00.000000",
+                    "value": 120
+                },
+                {
+                    "timestamp": "14:00:00.000000",
+                    "value": 110
+                },
+                {
+                    "timestamp": "15:00:00.000000",
+                    "value": 100
+                },
+                {
+                    "timestamp": "16:00:00.000000",
+                    "value": 90
+                },
+                {
+                    "timestamp": "17:00:00.000000",
+                    "value": 80
+                },
+                {
+                    "timestamp": "18:00:00.000000",
+                    "value": 70
+                },
+                {
+                    "timestamp": "19:00:00.000000",
+                    "value": 60
+                },
+                {
+                    "timestamp": "20:00:00.000000",
+                    "value": 50
+                },
+                {
+                    "timestamp": "21:00:00.000000",
+                    "value": 40
+                },
+                {
+                    "timestamp": "22:00:00.000000",
+                    "value": 30
+                },
+                {
+                    "timestamp": "23:00:00.000000",
+                    "value": 20
+                }
+            ]
+        },
+        {
+            "name": "rVibration_X_RMS_Velocity",
+            "upperThreshold": 140,
+            "lowerThreshold": 0,
+            "iniitalValue": 10,
+            "checkPoint": [
+                {
+                    "timestamp": "00:00:00.000000",
+                    "value": 130
+                },
+                {
+                    "timestamp": "01:00:00.000000",
+                    "value": 120
+                },
+                {
+                    "timestamp": "02:00:00.000000",
+                    "value": 110
+                },
+                {
+                    "timestamp": "03:00:00.000000",
+                    "value": 100
+                },
+                {
+                    "timestamp": "04:00:00.000000",
+                    "value": 90
+                },
+                {
+                    "timestamp": "05:00:00.000000",
+                    "value": 80
+                },
+                {
+                    "timestamp": "06:00:00.000000",
+                    "value": 70
+                },
+                {
+                    "timestamp": "07:00:00.000000",
+                    "value": 60
+                },
+                {
+                    "timestamp": "08:00:00.000000",
+                    "value": 50
+                },
+                {
+                    "timestamp": "09:00:00.000000",
+                    "value": 40
+                },
+                {
+                    "timestamp": "10:00:00.000000",
+                    "value": 30
+                },
+                {
+                    "timestamp": "11:00:00.000000",
+                    "value": 20
+                },
+                {
+                    "timestamp": "12:00:00.000000",
+                    "value": 10
+                },
+                {
+                    "timestamp": "13:00:00.000000",
+                    "value": 20
+                },
+                {
+                    "timestamp": "14:00:00.000000",
+                    "value": 30
+                },
+                {
+                    "timestamp": "15:00:00.000000",
+                    "value": 40
+                },
+                {
+                    "timestamp": "16:00:00.000000",
+                    "value": 50
+                },
+                {
+                    "timestamp": "17:00:00.000000",
+                    "value": 60
+                },
+                {
+                    "timestamp": "18:00:00.000000",
+                    "value": 70
+                },
+                {
+                    "timestamp": "19:00:00.000000",
+                    "value": 80
+                },
+                {
+                    "timestamp": "20:00:00.000000",
+                    "value": 90
+                },
+                {
+                    "timestamp": "21:00:00.000000",
+                    "value": 100
+                },
+                {
+                    "timestamp": "22:00:00.000000",
+                    "value": 110
+                },
+                {
+                    "timestamp": "23:00:00.000000",
+                    "value": 120
+                }
+            ]
+        },
+        {
+            "name": "wRMSCurrent",
+            "upperThreshold": 110,
+            "lowerThreshold": 0,
+            "iniitalValue": 99,
+            "checkPoint": [
+                {
+                    "timestamp": "00:00:00.000000",
+                    "value": 99
+                },
+                {
+                    "timestamp": "01:00:00.000000",
+                    "value": 100
+                },
+                {
+                    "timestamp": "02:00:00.000000",
+                    "value": 101
+                },
+                {
+                    "timestamp": "03:00:00.000000",
+                    "value": 102
+                },
+                {
+                    "timestamp": "04:00:00.000000",
+                    "value": 103
+                },
+                {
+                    "timestamp": "05:00:00.000000",
+                    "value": 104
+                },
+                {
+                    "timestamp": "06:00:00.000000",
+                    "value": 105
+                },
+                {
+                    "timestamp": "07:00:00.000000",
+                    "value": 106
+                },
+                {
+                    "timestamp": "08:00:00.000000",
+                    "value": 107
+                },
+                {
+                    "timestamp": "09:00:00.000000",
+                    "value": 108
+                },
+                {
+                    "timestamp": "10:00:00.000000",
+                    "value": 109
+                },
+                {
+                    "timestamp": "11:00:00.000000",
+                    "value": 110
+                },
+                {
+                    "timestamp": "12:00:00.000000",
+                    "value": 111
+                },
+                {
+                    "timestamp": "13:00:00.000000",
+                    "value": 110
+                },
+                {
+                    "timestamp": "14:00:00.000000",
+                    "value": 109
+                },
+                {
+                    "timestamp": "15:00:00.000000",
+                    "value": 108
+                },
+                {
+                    "timestamp": "16:00:00.000000",
+                    "value": 107
+                },
+                {
+                    "timestamp": "17:00:00.000000",
+                    "value": 106
+                },
+                {
+                    "timestamp": "18:00:00.000000",
+                    "value": 105
+                },
+                {
+                    "timestamp": "19:00:00.000000",
+                    "value": 104
+                },
+                {
+                    "timestamp": "20:00:00.000000",
+                    "value": 103
+                },
+                {
+                    "timestamp": "21:00:00.000000",
+                    "value": 102
+                },
+                {
+                    "timestamp": "22:00:00.000000",
+                    "value": 101
+                },
+                {
+                    "timestamp": "23:00:00.000000",
+                    "value": 100
+                }
+            ]
+        },
+        {
+            "name": "wCurrentLoad",
+            "upperThreshold": 110,
+            "lowerThreshold": 0,
+            "iniitalValue": 100,
+            "checkPoint": [
+                {
+                    "timestamp": "00:00:00.000000",
+                    "value": 100
+                },
+                {
+                    "timestamp": "01:00:00.000000",
+                    "value": 101
+                },
+                {
+                    "timestamp": "02:00:00.000000",
+                    "value": 102
+                },
+                {
+                    "timestamp": "03:00:00.000000",
+                    "value": 103
+                },
+                {
+                    "timestamp": "04:00:00.000000",
+                    "value": 104
+                },
+                {
+                    "timestamp": "05:00:00.000000",
+                    "value": 105
+                },
+                {
+                    "timestamp": "06:00:00.000000",
+                    "value": 106
+                },
+                {
+                    "timestamp": "07:00:00.000000",
+                    "value": 107
+                },
+                {
+                    "timestamp": "08:00:00.000000",
+                    "value": 108
+                },
+                {
+                    "timestamp": "09:00:00.000000",
+                    "value": 109
+                },
+                {
+                    "timestamp": "10:00:00.000000",
+                    "value": 110
+                },
+                {
+                    "timestamp": "11:00:00.000000",
+                    "value": 111
+                },
+                {
+                    "timestamp": "12:00:00.000000",
+                    "value": 112
+                },
+                {
+                    "timestamp": "13:00:00.000000",
+                    "value": 111
+                },
+                {
+                    "timestamp": "14:00:00.000000",
+                    "value": 110
+                },
+                {
+                    "timestamp": "15:00:00.000000",
+                    "value": 109
+                },
+                {
+                    "timestamp": "16:00:00.000000",
+                    "value": 108
+                },
+                {
+                    "timestamp": "17:00:00.000000",
+                    "value": 107
+                },
+                {
+                    "timestamp": "18:00:00.000000",
+                    "value": 106
+                },
+                {
+                    "timestamp": "19:00:00.000000",
+                    "value": 105
+                },
+                {
+                    "timestamp": "20:00:00.000000",
+                    "value": 104
+                },
+                {
+                    "timestamp": "21:00:00.000000",
+                    "value": 103
+                },
+                {
+                    "timestamp": "22:00:00.000000",
+                    "value": 102
+                },
+                {
+                    "timestamp": "23:00:00.000000",
+                    "value": 101
+                }
+            ]
+        },
+        {
+            "name": "wEncoderVelocity",
+            "upperThreshold": 50,
+            "lowerThreshold": 10,
+            "iniitalValue": 30,
+            "checkPoint": [
+                {
+                    "timestamp": "00:00:00.000000",
+                    "value": 10
+                },
+                {
+                    "timestamp": "01:00:00.000000",
+                    "value": 12
+                },
+                {
+                    "timestamp": "02:00:00.000000",
+                    "value": 14
+                },
+                {
+                    "timestamp": "03:00:00.000000",
+                    "value": 16
+                },
+                {
+                    "timestamp": "04:00:00.000000",
+                    "value": 18
+                },
+                {
+                    "timestamp": "05:00:00.000000",
+                    "value": 20
+                },
+                {
+                    "timestamp": "06:00:00.000000",
+                    "value": 22
+                },
+                {
+                    "timestamp": "07:00:00.000000",
+                    "value": 24
+                },
+                {
+                    "timestamp": "08:00:00.000000",
+                    "value": 26
+                },
+                {
+                    "timestamp": "09:00:00.000000",
+                    "value": 28
+                },
+                {
+                    "timestamp": "10:00:00.000000",
+                    "value": 30
+                },
+                {
+                    "timestamp": "11:00:00.000000",
+                    "value": 32
+                },
+                {
+                    "timestamp": "12:00:00.000000",
+                    "value": 34
+                },
+                {
+                    "timestamp": "13:00:00.000000",
+                    "value": 36
+                },
+                {
+                    "timestamp": "14:00:00.000000",
+                    "value": 38
+                },
+                {
+                    "timestamp": "15:00:00.000000",
+                    "value": 40
+                },
+                {
+                    "timestamp": "16:00:00.000000",
+                    "value": 42
+                },
+                {
+                    "timestamp": "17:00:00.000000",
+                    "value": 44
+                },
+                {
+                    "timestamp": "18:00:00.000000",
+                    "value": 46
+                },
+                {
+                    "timestamp": "19:00:00.000000",
+                    "value": 48
+                },
+                {
+                    "timestamp": "20:00:00.000000",
+                    "value": 50
+                },
+                {
+                    "timestamp": "21:00:00.000000",
+                    "value": 52
+                },
+                {
+                    "timestamp": "22:00:00.000000",
+                    "value": 54
+                },
+                {
+                    "timestamp": "23:00:00.000000",
+                    "value": 56
+                }
+            ]
+        }
+    ]
+}
