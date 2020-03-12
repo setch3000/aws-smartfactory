@@ -134,6 +134,10 @@ while True:
 
         message['sDateTime'] = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3]
 
+        t = datetime.utcnow()
+        timeInSeconds = int((t-datetime(1970,1,1)).total_seconds())
+        message['timeInSeconds'] = timeInSeconds
+
         # pprint.pprint(message)
         messageJson = json.dumps(message)
 

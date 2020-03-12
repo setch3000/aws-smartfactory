@@ -48,6 +48,8 @@ def generate_label(config, generated_data):
         label = 1
     else:
         label = 0
+    
+    return label
 
 
 def load_config(config_filename):
