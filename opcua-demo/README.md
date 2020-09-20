@@ -6,5 +6,5 @@ This demo includes data collection over OPC UA protocols by implementing OPC UA 
 
 ## Contributer
 
-Dongwoo Ku, Turck Korea
-Albet Lee, Solutions Architect, AWS
+- Dongwoo Ku, Turck Korea
+- Albet Lee, Solutions Architect, AWS
