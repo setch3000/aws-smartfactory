@@ -5,6 +5,20 @@
 This simulator generates data based on config JSON file.
 The config JSON file has 'checkPoint' porperty to specifiy the value on the designated timesatamp.
 
+## how to run
+
+pubsub_simulator_training.py : data generator for training
+
+``` python
+pubsub_simulator_training.py --endpoint awaztwvri1f9k-ats.iot.us-east-1.amazonaws.com --cert 56d1a0401f-certificate.pem.crt --key 56d1a0401f-private.pem.key --topic iot/sensors
+```
+
+pubsub_simulator_inference.py : data generator for inference
+
+``` python
+pubsub_simulator_inference.py --endpoint awaztwvri1f9k-ats.iot.us-east-1.amazonaws.com --cert 56d1a0401f-certificate.pem.crt --key 56d1a0401f-private.pem.key --topic iot/sensors
+```
+
 ## Examople config JSON file
 
 ```json

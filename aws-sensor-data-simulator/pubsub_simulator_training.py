@@ -116,13 +116,14 @@ time.sleep(2)
 
 # Publish to the same topic in a loop forever
 loopCount = 0
+config_data = ds.load_config('config.json')
+
 while True:
     if args.mode == 'both' or args.mode == 'publish':
         message = {}
         # message['message'] = args.message
         # message['sequence'] = loopCount
 
-        config_data = ds.load_config('config.json')
         for p in config_data['sensors']:
             name = p['name']
             value = float(round(ds.generate_data(p), 2))
