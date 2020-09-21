@@ -76,8 +76,12 @@ def greengrass_opcua_run():
                 logger.info('opc-ua error occur while connection')
                 client.publish(topic="turck/log", queueFullPolicy="AllOrException", payload='opc-ua error occur while connection',)
             else:
-                logger.info('MQTT publishing is succeed')
-                client.publish(topic="turck/log", queueFullPolicy="AllOrException", payload='MQTT publishing is succeed', )
+                if not(stationList):
+                    logger.info('opc-ua server has error')
+                    client.publish(topic="turck/log", queueFullPolicy="AllOrException", payload='opc-ua server has error', )
+                else:
+                    logger.info('MQTT publishing is succeed')
+                    client.publish(topic="turck/log", queueFullPolicy="AllOrException", payload='MQTT publishing is succeed', )
             finally:
                 time.sleep(logging_interval / 1000)
 
