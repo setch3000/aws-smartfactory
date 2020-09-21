@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This demo includes data collection over OPC UA protocols by implementing OPC UA clinet code with AWS Lambda and deploy it on GreenGras.
+This demo includes data collection over OPC UA protocols by implementing OPC UA clinet code with AWS Lambda and deploy it on GreenGrass.
 
 ## Contributer
 
