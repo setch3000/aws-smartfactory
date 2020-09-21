@@ -6,6 +6,7 @@ import greengrasssdk
 import time
 import configparser
 from opcua import Client
+from datetime import datetime
 
 # Setup logging to stdout
 logger = logging.getLogger(__name__)
@@ -54,24 +55,24 @@ def greengrass_opcua_run():
                         logData = ([tagName, tagValue])
 
                         # make mqtt message format
-                        if var != varList[-1]:
-                            logData = ":".join(logData) + ', '
-                            mqttMessage += logData
-                        else:
-                            logData = ":".join(logData)
-                            mqttMessage += logData
-                            mqttMessage = '{' + mqttMessage + '}'
+                        logData = ":".join(logData) + ', '
+                        mqttMessage += logData
 
-                            try:
-                                client.publish(
-                                    topic="turck/" + topicStation ,
-                                    queueFullPolicy="AllOrException",
-                                    payload=mqttMessage,
-                                )
-                            except Exception as e:
-                                logger.error("Failed to publish message: " + repr(e))
-                            else:
-                                logger.info("Successed to published message of " + topicStation)
+                    #add – The Unix epoch time, in seconds, at which the sensor or equipment reported the data.
+                    timeInSeconds = str(int((datetime.utcnow() - datetime(1970, 1, 1)).total_seconds()))
+                    mqttMessage += ":".join(['timeInSeconds', timeInSeconds])
+                    mqttMessage = '{' + mqttMessage + '}'
+
+                    try:
+                        client.publish(
+                            topic="turck/" + topicStation ,
+                            queueFullPolicy="AllOrException",
+                            payload=mqttMessage,
+                        )
+                    except Exception as e:
+                        logger.error("Failed to publish message: " + repr(e))
+                    else:
+                        logger.info("Successed to published message of " + topicStation)
             except:
                 logger.info('opc-ua error occur while connection')
                 client.publish(topic="turck/log", queueFullPolicy="AllOrException", payload='opc-ua error occur while connection',)
