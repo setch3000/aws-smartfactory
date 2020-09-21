@@ -2,6 +2,7 @@
 import logging
 import platform
 import sys
+#Call GreenGrass SDK on the AWS
 import greengrasssdk
 import time
 import configparser
@@ -64,6 +65,8 @@ def greengrass_opcua_run():
                     mqttMessage = '{' + mqttMessage + '}'
 
                     try:
+                        # Try to publish MQTT message to AWS
+                        # Each station topic name has 'turck/station_0', 'turck/station_1', ... ,'turck/station_7'
                         client.publish(
                             topic="turck/" + topicStation ,
                             queueFullPolicy="AllOrException",
