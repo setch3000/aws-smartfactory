@@ -87,6 +87,7 @@ def greengrass_opcua_run():
                     logger.info('MQTT publishing is succeed')
                     client.publish(topic="turck/log", queueFullPolicy="AllOrException", payload='MQTT publishing is succeed', )
             finally:
+                opcua_client.disconnect()
                 time.sleep(logging_interval / 1000)
 
 # Start executing the function above
